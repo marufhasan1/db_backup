@@ -20,6 +20,9 @@ And create an object of `'db_backup'` class
 If your project connected with Server and database already then you don't need to use this Method,
 Other wise you can use this method to connect with MySQL Server and Database
 **e.g**
-`include('db_backup_library.php'); $dbbackup = new db_backup;`
+`include('db_backup_library.php');`
+	
+` $dbbackup = new db_backup;`
+	
 `$dbbackup->connect("Server Name",User name,passwrd,Database)`
 ### Documentation is not complete yeat...........
