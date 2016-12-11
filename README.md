@@ -59,5 +59,5 @@ If you need to show the name of all table in database just call this method it w
 `print_r($dbbackup->tables());`
 
 ### `download()`
-	
+If you want to download The database you can use this method
 ### Documentation is not complete yeat...........
