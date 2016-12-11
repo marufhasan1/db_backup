@@ -1,8 +1,7 @@
 # Database Backup Library 
 ## Initialize
-`include('db_backup_library.php');`
-	
-`$dbbackup = new db_backup;`
+`include('db_backup_library.php');$dbbackup = new db_backup;`
+
 	Just Use include or require the 'db_backup_library.php' File
 	And create an object of 'db_backup' class
 
