@@ -1,6 +1,9 @@
 # Database Backup Library 
 ## Initialize
-
+	include('db_backup_library.php');
+	$dbbackup = new db_backup;
+## Initialize
+		
 	## Specification
 	-- Class Name is: db_backup
 	-- Methods
