@@ -24,22 +24,38 @@ Other wise you can use this method to connect with MySQL Server and Database
 	
 `include('db_backup_library.php');`
 	
-` $dbbackup = new db_backup;`
+`$dbbackup = new db_backup;`
 	
 `$dbbackup->connect("Server Name",User name,passwrd,Database)`
 
 ### `backup()`
 **This is a Mendatory Method**
-After connecting with Server and Database you must call this method other wise other method cannot work
+After connecting with Server and Database you must call this method other wise other method cannot work.
 
 **Example**
 	
 `include('db_backup_library.php');`
 	
-` $dbbackup = new db_backup;`
+`$dbbackup = new db_backup;`
 	
-`$dbbackup->connect("Server Name","Username","passwrd","Database")`
+`$dbbackup->connect("Server Name","Username","passwrd","Database");`
 	
-`$dbbackup->backup()`
+`$dbbackup->backup();`
+
+	
+### `tables()`
+If you need to show the name of all table in database just call this method it will return an array with the name of all table in the database.
+	
+**Example**
+	
+`include('db_backup_library.php');`
+	
+`$dbbackup = new db_backup;`
+	
+`$dbbackup->connect("Server Name","Username","passwrd","Database");`
+	
+`$dbbackup->backup();`
+	
+`print_r($dbbackup->tables());`
 	
 ### Documentation is not complete yeat...........
