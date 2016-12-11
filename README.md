@@ -1,4 +1,4 @@
-# db_backup
+# Database Backup Library
 	-- Specification--
 	-- Class Name is: db_backup
 	-- Methods
