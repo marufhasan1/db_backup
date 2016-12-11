@@ -1,5 +1,7 @@
-# Database Backup Library
-	-- Specification--
+# Database Backup Library 
+## Initialize
+
+	## Specification
 	-- Class Name is: db_backup
 	-- Methods
 		-- connect(Server Name,User name,passwrd,Database) 
