@@ -2,7 +2,9 @@
 ## Initialize
 	include('db_backup_library.php');
 	$dbbackup = new db_backup;
-## Initialize
+		Just Use include or require the 'db_backup_library.php' File
+		And create an object for 'db_backup' class
+## Methods
 		
 	## Specification
 	-- Class Name is: db_backup
