@@ -85,4 +85,36 @@ It has 2 Parameters
 	
 > 2nd Parameter is (Optional) name of The file Default is *'backup_yyy-mm-dd.sql'*
 	
-### Documentation is not complete yeat...........
+**Example**
+	
+`include('db_backup_library.php');`
+	
+`$dbbackup = new db_backup;`
+	
+`$dbbackup->connect("Server Name","Username","passwrd","Database");`
+	
+`$dbbackup->backup();`
+	
+`$dbbackup->save("file/","backup"));`
+### db_import()
+To Import the SQL File into your Database you can use this method just call the method with the source path of sql file as parameter Then it will import your database
+	
+#### Parameters
+It has 1 Parameters
+> The parameter is source path of sql file.
+	
+**Example**
+	
+`include('db_backup_library.php');`
+	
+`$dbbackup = new db_backup;`
+	
+`$dbbackup->connect("Server Name","Username","passwrd","Database");`
+	
+`$dbbackup->backup();`
+	
+`$dbbackup->db_import("test.sql"));`
+	
+If you have any question about this just knock me on facebook or email
+Fb: facebook.com/emarufhasan
+Gmail: emarufhasan@gmail.com
