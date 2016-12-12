@@ -8,7 +8,7 @@ And create an object of `'db_backup'` class
 
 ## Methods
 	
-* connect() 
+* (connect())[#connect]
 * backup()
 * tables()
 * download()
