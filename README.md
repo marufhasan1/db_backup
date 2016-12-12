@@ -9,11 +9,11 @@ And create an object of `'db_backup'` class
 ## Methods
 	
 * [connect()](#connect)
-* [backup()](backup)
-* [tables()](tables)
-* [download()](download)
-* [save()](save)
-* [db_import()](db_import)
+* [backup()](#backup)
+* [tables()](#tables)
+* [download()](#download)
+* [save()](#save)
+* [db_import()](#db_import)
 
 ### `connect()`
 **This is an Opotional Method**
