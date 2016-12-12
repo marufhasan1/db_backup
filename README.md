@@ -2,7 +2,7 @@
 ## Initialize
 `include('db_backup_library.php'); $dbbackup = new db_backup;`
 
-Just Use `include` or `require` the `'db_backup_library.php'` File
+Just Use `include` or `require` to the `'db_backup_library.php'` File
 And create an object of `'db_backup'` class
 
 
@@ -16,7 +16,7 @@ And create an object of `'db_backup'` class
 * db_import()
 
 ### `connect()`
-**This is a Opotional Method**
+**This is an Opotional Method**
 If your project connected with Server and database already then you don't need to use this Method,
 Other wise you can use this method to connect with MySQL Server and Database
 	
@@ -26,7 +26,7 @@ Other wise you can use this method to connect with MySQL Server and Database
 	
 `$dbbackup = new db_backup;`
 	
-`$dbbackup->connect("Server Name",User name,passwrd,Database)`
+`$dbbackup->connect("Server Name", Username, passwrd, Database)`
 
 ### `backup()`
 **This is a Mendatory Method**
@@ -38,13 +38,13 @@ After connecting with Server and Database you must call this method other wise o
 	
 `$dbbackup = new db_backup;`
 	
-`$dbbackup->connect("Server Name","Username","passwrd","Database");`
+`$dbbackup->connect("ServerName","Username","passwrd","Database");`
 	
 `$dbbackup->backup();`
 
 	
 ### `tables()`
-If you need to show the name of all table in database just call this method it will return an array with the name of all table in the database.
+If you need to show the name of all tables in database just call this method it will return an array with the name of all tables in the database.
 	
 **Example**
 	
@@ -52,7 +52,7 @@ If you need to show the name of all table in database just call this method it w
 	
 `$dbbackup = new db_backup;`
 	
-`$dbbackup->connect("Server Name","Username","passwrd","Database");`
+`$dbbackup->connect("ServerName","Username","passwrd","Database");`
 	
 `$dbbackup->backup();`
 	
@@ -69,7 +69,7 @@ If you want to download The database you can use this method. After run this met
 	
 `$dbbackup = new db_backup;`
 	
-`$dbbackup->connect("Server Name","Username","passwrd","Database");`
+`$dbbackup->connect("ServerName","Username","passwrd","Database");`
 	
 `$dbbackup->backup();`
 	
@@ -91,7 +91,7 @@ It has 2 Parameters
 	
 `$dbbackup = new db_backup;`
 	
-`$dbbackup->connect("Server Name","Username","passwrd","Database");`
+`$dbbackup->connect("ServerName","Username","passwrd","Database");`
 	
 `$dbbackup->backup();`
 	
@@ -109,13 +109,13 @@ It has 1 Parameters
 	
 `$dbbackup = new db_backup;`
 	
-`$dbbackup->connect("Server Name","Username","passwrd","Database");`
+`$dbbackup->connect("ServerName","Username","passwrd","Database");`
 	
 `$dbbackup->backup();`
 	
 `$dbbackup->db_import("test.sql"));`
 	
-If you have any question about this just knock me on facebook or email
+If you have any question about this, just knock me on facebook or email
 	
 Fb: [fb/emarufhasan](https://facebook.com/emarufhasan)
 Gmail: emarufhasan@gmail.com
