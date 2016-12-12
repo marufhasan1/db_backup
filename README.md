@@ -60,6 +60,7 @@ If you need to show the name of all table in database just call this method it w
 
 ### `download()`
 If you want to download The database you can use this method. After run this method you will see a Download Popup menu of database SQL file.
+	
 **Example**
 `<a href="download.php">Download</a>`
 	
@@ -73,4 +74,13 @@ If you want to download The database you can use this method. After run this met
 `$dbbackup->backup();`
 	
 `$dbbackup->download();`
+
+#### Note: This is the better way to keep the download code into a single page.
+
+### `save()`
+If you want to save the backup file into a server directory you can use this method
+#### Parameters
+It has 2 Parameters
+> 1st parameter is Target path (where you want to save the file) *It is Mendatory* If you want to kip it blank you can just use `save("")`
+> 2nd Parameter is (Optional) name of The file Default is *'backup_yyy-mm-dd.sql'*
 ### Documentation is not complete yeat...........
