@@ -116,5 +116,6 @@ It has 1 Parameters
 `$dbbackup->db_import("test.sql"));`
 	
 If you have any question about this just knock me on facebook or email
-Fb: facebook.com/emarufhasan
+	
+Fb: [fb/emarufhasan](https://facebook.com/emarufhasan)
 Gmail: emarufhasan@gmail.com
