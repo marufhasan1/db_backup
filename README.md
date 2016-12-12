@@ -59,5 +59,18 @@ If you need to show the name of all table in database just call this method it w
 `print_r($dbbackup->tables());`
 
 ### `download()`
-If you want to download The database you can use this method
+If you want to download The database you can use this method. After run this method you will see a Download Popup menu of database SQL file.
+**Example**
+`<a href="download.php">Download</a>`
+	
+**'download.php' Contain Only This code:**
+`include('db_backup_library.php');`
+	
+`$dbbackup = new db_backup;`
+	
+`$dbbackup->connect("Server Name","Username","passwrd","Database");`
+	
+`$dbbackup->backup();`
+	
+`$dbbackup->download();`
 ### Documentation is not complete yeat...........
