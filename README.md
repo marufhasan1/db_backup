@@ -65,6 +65,7 @@ If you want to download The database you can use this method. After run this met
 `<a href="download.php">Download</a>`
 	
 **'download.php' Contain Only This code:**
+	
 `include('db_backup_library.php');`
 	
 `$dbbackup = new db_backup;`
