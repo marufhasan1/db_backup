@@ -112,7 +112,7 @@ $dbbackup->db_import("test.sql"));
 	
 If you have any question about this, just knock me on facebook or email
 	
-Fb: [!fb/emarufhasan](https://facebook.com/emarufhasan)
+Fb: [fb/emarufhasan](https://facebook.com/emarufhasan)
 Gmail: emarufhasan@gmail.com
 	
 See the Video Tutorial: https://www.youtube.com/watch?v=QUS8cYoCk7Q
