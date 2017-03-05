@@ -1,9 +1,12 @@
 # Database Backup Library 
 ## Initialize
-`include('db_backup_library.php'); $dbbackup = new db_backup;`
+```php
+include('db_backup_library.php');
+$dbbackup = new db_backup;
+```
 
-Just Use `include` or `require` to the `'db_backup_library.php'` File
-And create an object of `'db_backup'` class
+Just Use ```php include() ``` or ```php require() ``` to the ```php 'db_backup_library.php' ``` File
+And create an object of ```php 'db_backup' ``` class
 
 
 ## Methods
@@ -22,11 +25,11 @@ Other wise you can use this method to connect with MySQL Server and Database
 	
 **Example**
 	
-`include('db_backup_library.php');`
-	
-`$dbbackup = new db_backup;`
-	
-`$dbbackup->connect("Server Name", Username, passwrd, Database)`
+```php 
+include('db_backup_library.php');
+$dbbackup = new db_backup;
+$dbbackup->connect("Server Name", Username, passwrd, Database)
+```
 
 ### `backup()`
 **This is a Mendatory Method**
