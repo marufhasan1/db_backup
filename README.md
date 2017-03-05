@@ -60,7 +60,9 @@ print_r($dbbackup->tables());
 If you want to download The database you can use this method. After run this method you will see a Download Popup menu of database SQL file.
 	
 **Example**
-```html<a href="download.php">Download</a>```
+```html
+<a href="download.php">Download</a>
+```
 	
 **'download.php' Contain Only This code:**
 	
