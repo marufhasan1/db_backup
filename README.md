@@ -5,8 +5,8 @@ include('db_backup_library.php');
 $dbbackup = new db_backup;
 ```
 
-Just Use ```php include() ``` or ```php require() ``` to the ```php 'db_backup_library.php' ``` File
-And create an object of ```php 'db_backup' ``` class
+Just Use `include()` or `require() ` to the `'db_backup_library.php'` File
+And create an object of `'db_backup'` class
 
 
 ## Methods
