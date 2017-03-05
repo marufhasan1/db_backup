@@ -33,48 +33,41 @@ Other wise you can use this method to connect with MySQL Server and Database
 After connecting with Server and Database you must call this method other wise other method cannot work.
 
 **Example**
-	
-`include('db_backup_library.php');`
-	
-`$dbbackup = new db_backup;`
-	
-`$dbbackup->connect("ServerName","Username","passwrd","Database");`
-	
-`$dbbackup->backup();`
+```php
+include('db_backup_library.php');
+$dbbackup = new db_backup;
+$dbbackup->connect("ServerName","Username","passwrd","Database");
+$dbbackup->backup();
+```
 
 	
 ### `tables()`
 If you need to show the name of all tables in database just call this method it will return an array with the name of all tables in the database.
 	
 **Example**
-	
-`include('db_backup_library.php');`
-	
-`$dbbackup = new db_backup;`
-	
-`$dbbackup->connect("ServerName","Username","passwrd","Database");`
-	
-`$dbbackup->backup();`
-	
-`print_r($dbbackup->tables());`
+```php	
+include('db_backup_library.php');
+$dbbackup = new db_backup;
+$dbbackup->connect("ServerName","Username","passwrd","Database");
+$dbbackup->backup();
+print_r($dbbackup->tables());
+```
 
 ### `download()`
 If you want to download The database you can use this method. After run this method you will see a Download Popup menu of database SQL file.
 	
 **Example**
-`<a href="download.php">Download</a>`
+```html<a href="download.php">Download</a>```
 	
 **'download.php' Contain Only This code:**
 	
-`include('db_backup_library.php');`
-	
-`$dbbackup = new db_backup;`
-	
-`$dbbackup->connect("ServerName","Username","passwrd","Database");`
-	
-`$dbbackup->backup();`
-	
-`$dbbackup->download();`
+```php 
+include('db_backup_library.php');
+$dbbackup = new db_backup;
+$dbbackup->connect("ServerName","Username","passwrd","Database");
+$dbbackup->backup();
+$dbbackup->download();
+```
 
 #### Note: This is the better way to keep the download code into a single page.
 
@@ -88,15 +81,13 @@ It has 2 Parameters
 	
 **Example**
 	
-`include('db_backup_library.php');`
-	
-`$dbbackup = new db_backup;`
-	
-`$dbbackup->connect("ServerName","Username","passwrd","Database");`
-	
-`$dbbackup->backup();`
-	
-`$dbbackup->save("file/","backup"));`
+```php
+include('db_backup_library.php');
+$dbbackup = new db_backup;
+$dbbackup->connect("ServerName","Username","passwrd","Database");
+$dbbackup->backup();
+$dbbackup->save("file/","backup"));
+```
 ### db_import()
 To Import the SQL File into your Database you can use this method just call the method with the source path of sql file as parameter Then it will import your database
 	
@@ -106,15 +97,13 @@ It has 1 Parameters
 	
 **Example**
 	
-`include('db_backup_library.php');`
-	
-`$dbbackup = new db_backup;`
-	
-`$dbbackup->connect("ServerName","Username","passwrd","Database");`
-	
-`$dbbackup->backup();`
-	
-`$dbbackup->db_import("test.sql"));`
+```php
+include('db_backup_library.php');
+$dbbackup = new db_backup;
+$dbbackup->connect("ServerName","Username","passwrd","Database");
+$dbbackup->backup();
+$dbbackup->db_import("test.sql"));
+```
 	
 If you have any question about this, just knock me on facebook or email
 	
