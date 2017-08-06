@@ -25,11 +25,12 @@
 			--Parameters
 			1st: Source/Path of SQL file
 */			
-	class db_backup{
+
+
+class db_backup{
 		private $exported_database;
 		
 		public function backup(){
-
 			/*-------------------------------------*/
 			//------Creating Table SQL start-------//
 			/*-------------------------------------*/
@@ -56,17 +57,21 @@
 				$solid_field_name=implode(", ",$show_field);
 				$create_field_sql="INSERT INTO `$table` ( ".$solid_field_name.") VALUES \n";
 
-				$data_viewig=$this->view_data($table);
-				$solid_data_viewig=implode(", \n",$data_viewig)."; ";
-
 				//Start checking data available
-				$table_data=mysql_query("SELECT*FROM ".$table);
+				mysql_query("SET character_set_results = 'utf8', character_set_client = 'utf8', character_set_connection = 'utf8', character_set_database = 'utf8', character_set_server = 'utf8'");
+				$table_data= mysql_query("SELECT*FROM ".$table);
 				if(!$table_data){
 					echo 'Could not run query: '. mysql_error();
 				}
 				
 				if (mysql_num_rows($table_data) > 0) {
-					$all_table_data[]=$create_field_sql.$solid_data_viewig;
+					$data_viewig=$this->view_data($table);
+					$splice_data = array_chunk($data_viewig,50);
+					foreach($splice_data as $each_datas){
+						$solid_data_viewig=implode(", \n",$each_datas)."; ";
+						$all_table_data[]=$create_field_sql.$solid_data_viewig;
+					}
+				
 				}
 				else{
 					$all_table_data[]=null;
@@ -76,7 +81,7 @@
 				
 				
 			}
-			$entiar_table_data=implode(" \n\n\n\n",$all_table_data);
+			$entiar_table_data=implode(" \n\n\n",$all_table_data);
 			/*-------------------------------------*/
 			//-------Inserting Data SQL End--------//
 			/*-------------------------------------*/
