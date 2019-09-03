@@ -9,17 +9,10 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="DO">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="IIS">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/php/db_backup" />
+            <mapping local="$PROJECT_DIR$" web="/php/MySQL_DB_Backup" />
           </mappings>
         </serverdata>
       </paths>
