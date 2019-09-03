@@ -1,0 +1,21 @@
+{
+  "name": "baneeishaque/mysql-db-exporter",
+  "description": "Export MySQL Database",
+  "minimum-stability": "stable",
+  "license": "GPLv3",
+  "authors": [
+    {
+      "name": "Banee Ishaque K",
+      "email": "baneeishaque@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "ext-mysqli": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "MysqlDbExporter": "src/"
+    }
+  }
+}
