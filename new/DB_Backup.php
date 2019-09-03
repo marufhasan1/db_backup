@@ -133,8 +133,8 @@
 
 		public static function save($path,$name=""){
 			$name = ($name != "") ? $name : 'backup_' . date('Y-m-d');
-			
-			//Save file
+
+            //Save tests
 			$file = fopen($path.$name.".sql","w+");
 			$fw = fwrite($file, self::$exported_database);	
 			if(!$fw){
@@ -167,7 +167,7 @@
 			//Forign code Start here
 			//---------------------------------------------------------------------------
 			$templine = '';
-			// Read in entire file
+            // Read in entire tests
 			$lines = file($file_path);
 			// Loop through each line
 			foreach ($lines as $line)

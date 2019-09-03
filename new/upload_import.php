@@ -5,7 +5,7 @@
 		$dbbackup->backup();
 		if(isset($_POST["submit"])){
 
-			//Uloading The temporary database file start here
+            //Uloading The temporary database tests start here
         		if ($_FILES['temp_file']['name']!=null && $_FILES['temp_file']['name']!="") {
         			$src=$_FILES['temp_file']['tmp_name'];
         			$destination='temp_upload/temp_database.'.pathinfo($_FILES['temp_file']['name'],PATHINFO_EXTENSION);
@@ -21,7 +21,7 @@
         				//Importing Uploaded File End here
         			}
         		}
-			//Uloading The temporary database file end here
+            //Uloading The temporary database tests end here
 		}
 	?>
 	

@@ -13,17 +13,17 @@
 				4th: Database Name
 		-- tables() It will Return an array with all tables name in the database
 		-- backup() It will Initialize The Backup
-		-- download() It will download The Backup file in sql
+		-- download() It will download The Backup tests in sql
 			--Parameters
 				1st: If you want to give a custom name of backup use it Default is 'backup'
-		-- save() If you want to save the backup file into a server directory you can use it
+		-- save() If you want to save the backup tests into a server directory you can use it
 			--parameters
 				1st: Path URL
-				2nd: file Name Default Name is backup_yyy-mm-dd
+				2nd: tests Name Default Name is backup_yyy-mm-dd
 		--db_import(source)
 			Usage: If you want to Import Database from SQL File Use this method
 			--Parameters
-			1st: Source/Path of SQL file
+			1st: Source/Path of SQL tests
 */			
 
 
@@ -97,21 +97,21 @@ class db_backup{
 		public function download($name='backup'){
 			/*//Download
 			$file_name="Tmpdata.sql";
-			$file=fopen($file_name,"w+");
-			fwrite($file, $this->exported_database);*/
+			$tests=fopen($file_name,"w+");
+			fwrite($tests, $this->exported_database);*/
 			
 			header('Content-Type: application/sql');
 			header('Content-Disposition: attachment; filename='.$name.'.sql');
 			echo $this->exported_database;
 			/*readfile($file_name);
-			fclose($file);
+			fclose($tests);
 			unlink($file_name);*/
 		}
 		
 		public function save($path,$name=""){
 			$name = ($name != "") ? $name : 'backup_' . date('Y-m-d');
-			
-			//Save file
+
+            //Save tests
 			$file = fopen($path.$name.".sql","w+");
 			$fw = fwrite($file, $this->exported_database);	
 			if(!$fw){
@@ -203,7 +203,7 @@ class db_backup{
 			//Forign code Start here
 			//---------------------------------------------------------------------------
 			$templine = '';
-			// Read in entire file
+            // Read in entire tests
 			$lines = file($file_path);
 			// Loop through each line
 			foreach ($lines as $line)

@@ -1,9 +1,11 @@
 	<?php
 		require "DB_Backup.php";
-		use DB_Backup as DB;
-		DB::connect("localhost","root","","prototype");
-		
-		if(DB::backup()->save("file/")){
+
+    use DB_Backup as DB;
+
+    DB::connect("localhost", "root", "", "prototype");
+
+    if (DB::backup()->save("tests/")) {
 			echo "Backup Saved Successfully";
 		}
 
