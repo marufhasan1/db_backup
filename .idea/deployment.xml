@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" serverName="IIS">
     <serverData>
       <paths name="Apache 2.4">
         <serverdata>
@@ -19,7 +19,7 @@
       <paths name="IIS">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/php/db_backup" />
           </mappings>
         </serverdata>
       </paths>
