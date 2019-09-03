@@ -2,7 +2,7 @@
   "name": "baneeishaque/mysql-db-exporter",
   "description": "Export MySQL Database",
   "minimum-stability": "stable",
-  "license": "GPLv3",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "Banee Ishaque K",
