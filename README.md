@@ -61,7 +61,7 @@ If you want to download The database you can use this method. After run this met
 	
 **Example**
 ```html
-<a href="download.php">Download</a>
+<a href="tests/download.php">Download</a>
 ```
 	
 **'download.php' Contain Only This code:**
@@ -107,7 +107,7 @@ include('db_backup_library.php');
 $dbbackup = new db_backup;
 $dbbackup->connect("ServerName","Username","passwrd","Database");
 $dbbackup->backup();
-$dbbackup->db_import("sample_database.sql"));
+$dbbackup->db_import("sample/inventory.sql"));
 ```
 	
 If you have any question about this, just knock me on facebook or email

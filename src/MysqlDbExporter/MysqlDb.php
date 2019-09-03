@@ -1,6 +1,10 @@
 <?php
 
-class DB_Backup
+namespace MysqlDbExporter;
+
+use mysqli;
+
+class MysqlDb
 {
     private static $conn = null;
     private static $exported_database;
@@ -53,7 +57,7 @@ class DB_Backup
             }
 
             if ($table_data->num_rows > 0) {
-                $data_viewig = (new DB_Backup)->view_data($table);
+                $data_viewig = self::view_data($table);
                 $splice_data = array_chunk($data_viewig, 50);
                 foreach ($splice_data as $each_datas) {
                     $solid_data_viewig = implode(", \n", $each_datas) . "; ";
@@ -112,7 +116,7 @@ class DB_Backup
     }
 
 
-    public function view_data($tablename)
+    public static function view_data($tablename)
     {
         $all_data = array();
         $table_data = self::$conn->query("SELECT * FROM `" . $tablename . "`");

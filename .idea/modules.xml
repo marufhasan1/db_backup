@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/db_backup.iml" filepath="$PROJECT_DIR$/.idea/db_backup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MySQL_DB_Backup.iml" filepath="$PROJECT_DIR$/.idea/MySQL_DB_Backup.iml" />
     </modules>
   </component>
 </project>
