@@ -19,7 +19,7 @@ And create an object of `'db_backup'` class
 * [db_import()](#db_import)
 
 ### `connect()`
-**This is an Opotional Method**
+**This is an Optional Method**
 If your project connected with Server and database already then you don't need to use this Method,
 Other wise you can use this method to connect with MySQL Server and Database
 	
@@ -32,7 +32,7 @@ $dbbackup->connect("Server Name", Username, passwrd, Database)
 ```
 
 ### `backup()`
-**This is a Mendatory Method**
+**This is a Mandatory Method**
 After connecting with Server and Database you must call this method other wise other method cannot work.
 
 **Example**
@@ -61,7 +61,7 @@ If you want to download The database you can use this method. After run this met
 	
 **Example**
 ```html
-<a href="download.php">Download</a>
+<a href="tests/download.php">Download</a>
 ```
 	
 **'download.php' Contain Only This code:**
@@ -80,7 +80,7 @@ $dbbackup->download();
 If you want to save the backup file into a server directory you can use this method
 #### Parameters
 It has 2 Parameters
-> 1st parameter is Target path (where you want to save the file) *It is Mendatory* If you want to kip it blank you can just use `save("")`
+> 1st parameter is Target path (where you want to save the file) *It is Mandatory* If you want to kip it blank you can just use `save("")`
 	
 > 2nd Parameter is (Optional) name of The file Default is *'backup_yyy-mm-dd.sql'*
 	
@@ -107,7 +107,7 @@ include('db_backup_library.php');
 $dbbackup = new db_backup;
 $dbbackup->connect("ServerName","Username","passwrd","Database");
 $dbbackup->backup();
-$dbbackup->db_import("test.sql"));
+$dbbackup->db_import("sample/inventory.sql"));
 ```
 	
 If you have any question about this, just knock me on facebook or email
